@@ -1,7 +1,10 @@
-const div = document.querySelectorAll("div");
+const form = document.querySelector("form");
+console.log(form) 
 
+const articles = document.querySelectorAll("article")
 
-let article = document.createElement("article");
+const submit = document.querySelector("#submitButton")
 
-div.appendChild(article)
-
+// form.addEventListener("submit",(event) => {
+//     console.log(event.target) 
+// })
