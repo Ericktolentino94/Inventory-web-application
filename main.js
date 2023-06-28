@@ -17,7 +17,7 @@ form.addEventListener("submit",(event) => {
     sneakerTitle.textContent = sneakerListing.sneakerName.value
     sneakerPrice.textContent = sneakerListing.sneakerPrice.value
     sneakerSize.textContent = sneakerListing.sneakerSize.value
-    // console.log(sneakerList.sneakerSize.value)
+    
     li.append(sneakerTitle)
     li.append(sneakerPrice);
     li.append(sneakerSize);
