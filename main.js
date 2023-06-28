@@ -1,10 +1,15 @@
 const form = document.querySelector("form");
-console.log(form) 
 
-const articles = document.querySelectorAll("article")
+const li = document.querySelector("li")
+
 
 const submit = document.querySelector("#submitButton")
 
-// form.addEventListener("submit",(event) => {
-//     console.log(event.target) 
-// })
+form.addEventListener("submit",(event) => {
+    event.preventDefault();
+    let sneakerListing = event.target
+    li.append( sneakerListing.sneakerName.value);
+    li.append(sneakerListing.sneakerPrice.value);
+    li.append(sneakerListing.size.value);
+    
+})
