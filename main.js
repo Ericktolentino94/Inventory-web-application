@@ -12,14 +12,20 @@ form.addEventListener("submit",(event) => {
     let sneakerTitle = document.createElement("h3")
     let sneakerPrice = document.createElement("p")
     let sneakerSize = document.createElement("p")
-    
+    let sneakerGender = document.createElement("p")
+    let sneakerInstock = document.createElement("p")
 
     sneakerTitle.textContent = sneakerListing.sneakerName.value
-    sneakerPrice.textContent = sneakerListing.sneakerPrice.value
-    sneakerSize.textContent = sneakerListing.sneakerSize.value
+    sneakerPrice.textContent = `Price: $ ${sneakerListing.sneakerPrice.value}`
+    sneakerInstock.textContent = `In Stock: ${sneakerListing.sneakerInstock.value}`
+    sneakerGender.textContent = `US ${sneakerListing.gender.value}`
+    sneakerSize.textContent = `Size: ${sneakerListing.sneakerSize.value}`
+
     
-    li.append(sneakerTitle)
+    li.append(sneakerTitle);
     li.append(sneakerPrice);
+    li.append(sneakerInstock);
+    li.append(sneakerGender);
     li.append(sneakerSize);
     
     sneakerList.appendChild(li)
