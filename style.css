@@ -1,4 +1,23 @@
+header {
+    text-align: center;
+}
+
 body div{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    background-color: white;
+}
+
+body h2 {
+    text-align: center;
+}
+
+body form {
+    text-align: center;
+}
+
+body ul {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
 }

@@ -14,12 +14,17 @@ form.addEventListener("submit",(event) => {
     let sneakerSize = document.createElement("p")
     let sneakerGender = document.createElement("p")
     let sneakerInstock = document.createElement("p")
+    let sneakerImage = document.createElement("img")
+
+    sneakerImage.append("src=")
+    console.log(sneakerImage)
 
     sneakerTitle.textContent = sneakerListing.sneakerName.value
     sneakerPrice.textContent = `Price: $ ${sneakerListing.sneakerPrice.value}`
     sneakerInstock.textContent = `In Stock: ${sneakerListing.sneakerInstock.value}`
     sneakerGender.textContent = `US ${sneakerListing.gender.value}`
     sneakerSize.textContent = `Size: ${sneakerListing.sneakerSize.value}`
+    sneakerImage.src = sneakerListing.imgUrl.value
 
     
     li.append(sneakerTitle);
@@ -27,6 +32,7 @@ form.addEventListener("submit",(event) => {
     li.append(sneakerInstock);
     li.append(sneakerGender);
     li.append(sneakerSize);
+    li.append(sneakerImage)
     
     sneakerList.appendChild(li)
 })
