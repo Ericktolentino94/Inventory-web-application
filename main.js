@@ -8,9 +8,9 @@ li.addEventListener("click", (event) => {
 
 
 form.addEventListener("submit", (event) => {
-    if (!form.value.innerText) {
-        alert("Error fields in form cannot be empty")
-    } else {
+    // if (!form.value.innerText) {
+    //     alert("Error fields in form cannot be empty")
+    // } else {
   let li = document.createElement("li");
   event.preventDefault();
   const sneakerListing = event.target;
@@ -59,7 +59,7 @@ form.addEventListener("submit", (event) => {
   li.append(sneakerRemove);
 
   sneakerList.appendChild(li);
-}});
+});
     
 form.reset();
 
