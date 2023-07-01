@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) => {
 
   sneakerTitle.textContent = sneakerListing.sneakerName.value;
   sneakerPrice.textContent = `Price: $ ${sneakerListing.sneakerPrice.value}`;
-  sneakerInstock.textContent = `In Stock: ${sneakerListing.sneakerInstock.value}`;
+  sneakerInstock.textContent = `${sneakerListing.sneakerInstock.value}`;
   sneakerGender.textContent = `US ${sneakerListing.gender.value}`;
   sneakerSize.textContent = `Size: ${sneakerListing.sneakerSize.value}`;
   sneakerImage.src = sneakerListing.imgUrl.value;
@@ -35,11 +35,11 @@ form.addEventListener("submit", (event) => {
   });
 
   sneakerInstock.addEventListener("click", (event) => {
-    if(sneakerInstock.textContent == "In Stock: True") {
-        sneakerInstock.textContent = "In Stock: false"
+    if(sneakerInstock.textContent == "In stock") {
+        sneakerInstock.textContent = "Out of stock"
     } else {
-        if(sneakerInstock.textContent == "In Stock: false") {
-            sneakerInstock.textContent = "In Stock: True"
+        if(sneakerInstock.textContent == "Out of stock") {
+            sneakerInstock.textContent = "In stock"
         }
     }
     });
