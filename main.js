@@ -1,16 +1,9 @@
 const form = document.querySelector("form");
-const li = document.querySelector("li");
 
-
-li.addEventListener("click", (event) => {
-    li.remove()
-})
 
 
 form.addEventListener("submit", (event) => {
-    // if (!form.value.innerText) {
-    //     alert("Error fields in form cannot be empty")
-    // } else {
+  
   let li = document.createElement("li");
   event.preventDefault();
   const sneakerListing = event.target;
@@ -19,12 +12,13 @@ form.addEventListener("submit", (event) => {
   const sneakerPrice = document.createElement("p");
   const sneakerSize = document.createElement("p");
   const sneakerGender = document.createElement("p");
-  const sneakerInstock = document.createElement("p");
+  const sneakerInstock = document.createElement("button");
   const sneakerImage = document.createElement("img");
   const sneakerRemove = document.createElement("button");
 
   sneakerImage.append("src=");
   sneakerRemove.append("Remove Item");
+  sneakerInstock.append("In Stock")
 
 
   sneakerTitle.textContent = sneakerListing.sneakerName.value;
@@ -41,11 +35,11 @@ form.addEventListener("submit", (event) => {
   });
 
   sneakerInstock.addEventListener("click", (event) => {
-    if(sneakerInstock.textContent === "True") {
-        sneakerInstock.textContent = "False"
+    if(sneakerInstock.textContent == "In Stock: True") {
+        sneakerInstock.textContent = "In Stock: false"
     } else {
-        if(sneakerInstock.textContent === "False") {
-            sneakerInstock.textContent = "True"
+        if(sneakerInstock.textContent == "In Stock: false") {
+            sneakerInstock.textContent = "In Stock: True"
         }
     }
     });
@@ -59,7 +53,8 @@ form.addEventListener("submit", (event) => {
   li.append(sneakerRemove);
 
   sneakerList.appendChild(li);
+  form.reset();
 });
     
-form.reset();
+
 
