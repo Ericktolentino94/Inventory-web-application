@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,27 @@
     <script defer src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <h1>  Sneaker Inventory Tracker </h1>
-</header>
+
 <body>
+    <header>
+        <h1> Sneaker Inventory Tracker </h1>
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5hEU0OwpQrFQQujmJZCLq1kGGzrFC36y-Vze3wNTxg_o8NnVrZxBGIVEYSmlYph0SMWI&usqp=CAU">
+    </header>
     <div>
         <h2>Current Inventory</h2>
         <article>
             <form>
 
-            
+
                 <label for="sneakerName">Sneaker Name</label>
                 <input type="text" id="sneakerName" name="sneakerName">
 
-            
+
                 <label for="sneakerPrice">Price </label>
                 <input type="text" id="sneakerPrice" name="price">
 
-             
+
                 <label for="sneakerSize">Size</label>
                 <input type="text" id="sneakerSize" name="size">
 
@@ -36,41 +40,43 @@
 
                 <label for="imgUrl">Image URL </label>
                 <input type="link" id="imgUrl">
-           
-                
-           
 
-                   
-                        <button type="submit" id="submitButton">Submit</button>
-                
-                   
 
-            
-                     
-                        <button type="reset" id="resetButton">Reset</button>
-                    
-                     
 
-                
-               
-            
+
+
+                <button type="submit" id="submitButton">Submit</button>
+
+
+
+
+
+                <button type="reset" id="resetButton">Reset</button>
+
+
+
+
+
+
             </form>
-            
+
         </article>
-         <article>
+        <article>
             <ul>
                 <li>
-        <h3>Air Jordan 1 Low</h3>
-        <p> <strong>Price: </strong>$120</p>
-        <p> <strong>InStock: </strong>True</p>            
-        
-        <p> <strong>US </strong>M</p>
-        <p> <strong> Size: </strong>12</p>
-               
-        <img src="https://thousandlakes.store/cdn/shop/products/Thousand-Lakes-Store-air-jordan-1-low-shadow-toe-1.png?v=1650290688&width=493" >
-        </li>    
-    </ul>
+                    <img
+                        src="https://thousandlakes.store/cdn/shop/products/Thousand-Lakes-Store-air-jordan-1-low-shadow-toe-1.png?v=1650290688&width=493">
+                    <h3>Air Jordan 1 Low</h3>
+                    <p> <strong>Price: </strong>$120</p>
+                    <p> <strong>InStock: </strong>True</p>
+
+                    <p> <strong>US </strong>M</p>
+                    <p> <strong> Size: </strong>12</p>
+                    <button type="reset" id="removeItem">Remove Item</button>
+                </li>
+            </ul>
         </article>
     </div>
 </body>
+
 </html>

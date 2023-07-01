@@ -1,23 +1,75 @@
-header {
-    text-align: center;
+body {
+    background-image: radial-gradient(circle, #b6bdd7, #a2aac7, #8f98b8, #7c86a9, #6a749a, #68799e, #677fa1, #6684a3, #7ea1b6, #9dbec9, #c1dadd, #e8f6f5);
 }
 
-body div{
+header {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+header img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: grey;
+}
+
+
+body div {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    background-color: white;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 body h2 {
+    color:white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: underline;
 }
+
 
 body form {
     text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
 }
 
-body ul {
+ul {
+    list-style-type: none;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3,3fr);
+    grid-template-columns: repeat(3, 3fr);
+
+}
+
+ul li {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 10px;
+}
+
+li img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    max-width: 60%;
+
+}
+
+@media (max-width:768px) {
+    body article {
+        display: flex;
+        justify-content: center;
+    }
+    body form {
+        display: grid;
+        width: 50%
+    }
 }
