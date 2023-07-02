@@ -35,11 +35,11 @@ form.addEventListener("submit", (event) => {
   });
 
   sneakerInstock.addEventListener("click", (event) => {
-    if(sneakerInstock.textContent == "In stock") {
-        sneakerInstock.textContent = "Out of stock"
+    if(sneakerInstock.textContent == "True") {
+        sneakerInstock.textContent = "False"
     } else {
-        if(sneakerInstock.textContent == "Out of stock") {
-            sneakerInstock.textContent = "In stock"
+        if(sneakerInstock.textContent == "False") {
+            sneakerInstock.textContent = "True"
         }
     }
     });
